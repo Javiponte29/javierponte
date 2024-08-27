@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Javier</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .letra_header:hover {
+            color: #fe8330;
+        }
+
+        .letra_header {
+            color: #333;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="/img/foto.jpeg" alt="">
-        </div>
-        <nav></nav>
+    <header class="flex justify-between border-b">
+        <a href="./" class="flex items-center justify-between pl-16"> 
+            <img src="/img/foto.jpeg" alt="Javi picture" title="Javi picture" class="w-20 h-20 rounded-full">
+            <h1 class="ml-4 text-2xl letra_header" title="Francisco Javier Ponte Yáñez">Francisco Javier Ponte Yáñez</h1>
+        </a>
+        <nav class="flex items-center pr-16">
+            <ul class="flex">
+                <li class="p-8">
+                    <a href="./" class="text-xl letra_header">Home</a>
+                </li>
+                <li class="p-8">
+                    <a href="./" class="text-xl letra_header">About Me</a>
+                </li>
+                <li class="p-8">
+                    <a href="./" class="text-xl letra_header">Projetcs</a>
+                </li>
+                <li class="p-8">
+                    <a href="./" class="text-xl letra_header">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main class="text-center">
+        <h2 class="text-6xl font-bold">Hey, I'm Javi</h2>
+        <p class="text-xl pt-4">I like to code and design websites</p>
+    </main>
 </body>
 </html>
