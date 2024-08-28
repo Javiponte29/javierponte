@@ -18,7 +18,7 @@ html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-body main section button {
+body main section a {
     background-color: #fe8330;
     color: #FFFFFF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +26,10 @@ body main section button {
 
 .presentation {
     background-color: #f4f4f4;
+}
+
+.presentation div a span svg {
+    color: #000000;
 }
 
 .presentation div a span svg:hover {
