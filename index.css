@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.letra_header:hover {
+    color: #fe8330;
+}
+
+.letra_header {
+    color: #333;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body main section button {
+    background-color: #fe8330;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.presentation {
+    background-color: #f4f4f4;
+}
+
+.presentation div a span svg:hover {
+    background-color: #ff99547e;
+    border-radius: 15%;
+}
+
+.about {
+    background-color: #fafafa;
+}
+
+.skills p {
+    color: #666;
+    background: rgba(153, 153, 153, 0.2);
+    font-family: inherit;
+}
+
+.skills p:hover {
+    color: #ff9954;
+}
+
+.me p {
+    color: #666;
+}
