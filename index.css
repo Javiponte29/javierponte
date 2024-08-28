@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .letra_header:hover {
     color: #fe8330;
 }
