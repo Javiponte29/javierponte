@@ -18,7 +18,7 @@ html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-body main section a {
+.project-b {
     background-color: #fe8330;
     color: #FFFFFF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,4 +53,21 @@ body main section a {
 
 .me p {
     color: #666;
+}
+
+.projects {
+    background-color: #f4f4f4;
+    margin-top: -5em;
+}
+
+.projects div div p {
+    color: #333;
+}
+
+.project-b {
+    transition: transform 0.3s ease;
+}
+
+.project-b:hover {
+    transform: translateY(-10px); /* Ajusta el valor según tu necesidad */
 }

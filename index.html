@@ -13,28 +13,45 @@
     </style>
 </head>
 <body>
-    <header class="flex justify-between border-b">
-        <a href="./" class="flex items-center justify-between pl-16"> 
-            <img src="https://i.postimg.cc/BLRKZ5dd/foto.jpg" alt="Javi picture" title="Javi picture" class="w-20 h-20 rounded-full">
-            <h1 class="ml-4 text-2xl letra_header" title="Francisco Javier Ponte Yáñez">Francisco Javier Ponte Yáñez</h1>
+    <header class="flex justify-between items-center border-b px-4 py-2">
+        <a href="./" class="flex items-center">
+            <img src="https://i.postimg.cc/BLRKZ5dd/foto.jpg" alt="Javi picture" title="Javi picture" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
+            <h1 class="ml-4 text-xl sm:text-2xl letra_header" title="Francisco Javier Ponte Yáñez">Francisco Javier Ponte Yáñez</h1>
         </a>
-        <nav class="flex items-center pr-16">
-            <ul class="flex">
-                <li class="p-8">
-                    <a href="./" class="text-xl letra_header">Home</a>
+        <nav id="menu" class="hidden sm:flex sm:items-center sm:space-x-8">
+            <ul class="flex flex-col sm:flex-row sm:space-x-8 text-right sm:text-left">
+                <li class="p-4 sm:p-0">
+                    <a href="./" class="text-lg sm:text-xl letra_header">Home</a>
                 </li>
-                <li class="p-8">
-                    <a href="#about" class="text-xl letra_header">About Me</a>
+                <li class="p-4 sm:p-0">
+                    <a href="#about" class="text-lg sm:text-xl letra_header">About</a>
                 </li>
-                <li class="p-8">
-                    <a href="#projects" class="text-xl letra_header">Projetcs</a>
+                <li class="p-4 sm:p-0">
+                    <a href="#projects" class="text-lg sm:text-xl letra_header">Projects</a>
                 </li>
-                <li class="p-8">
-                    <a href="./" class="text-xl letra_header">Contact</a>
-                </li>
+                <!--<li class="p-4 sm:p-0">
+                    <a href="#contact" class="text-lg sm:text-xl letra_header">Contact</a>
+                </li>-->
             </ul>
         </nav>
+        <button id="menu-toggle" class="block sm:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
     </header>
+    
+    <nav id="dropdown-menu" class="hidden flex-col items-end text-right px-4 py-2 sm:hidden">
+        <ul class="flex flex-col space-y-2">
+            <li><a href="./" class="text-lg text-2xl letra_header">Home</a></li>
+            <li><a href="#about" class="text-lg text-2xl letra_header">About</a></li>
+            <li><a href="#projects" class="text-lg text-2xl letra_header">Projects</a></li>
+            <!--<li><a href="#contact" class="text-lg text-2xl letra_header">Contact</a></li>-->
+        </ul>
+    </nav>
+    
+    
+    
     <main>
         <!-- Presentation -->
         <section class="presentation flex items-center justify-center h-screen">
@@ -85,7 +102,7 @@
             <div class="text-center flex flex-col justify-center items-center flex-grow">
                 <h2 class="text-6xl font-bold font-serif">Hey, I'm Javi</h2>
                 <p class="text-xl m-10 font-serif">I like to code and design websites</p>
-                <a href="#projects" class="font-bold py-4 px-16 text-xl rounded-lg transform transition duration-300 hover:-translate-y-1 bg-orange-500 text-white">
+                <a href="#projects" class="project-b font-bold py-4 px-16 text-xl rounded-lg transform transition duration-300 hover:-translate-y-1 bg-orange-500 text-white">
                     Projects
                 </a>
             </div>
@@ -96,8 +113,8 @@
                 <h2 class="text-5xl font-semibold font-serif pt-16">About Me</h2>
                 <p class="text-xl mt-6">Here you can find who I am, the technologies I can use and what I like to do.</p>
             </div>
-            <div class="flex justify-between m-20">
-                <div class="w-1/2 mr-10 pr-14 me">
+            <div class="flex flex-col md:flex-row md:justify-between justify-center m-20">
+                <div class="w-full md:w-1/2 md:mr-10 md:pr-14 pb-10">
                     <h3 class="text-3xl font-semibold font-serif mb-8">This is me</h3>
                     <p class="text-xl mb-4">I'm a <span class="font-semibold">Web Developer</span> without formal work experience, but I have a 
                         strong passion for <span class="font-semibold">Designing</span> and <span class="font-semibold">Developing</span> websites. While I prefer front-end development, I also have 
@@ -105,14 +122,13 @@
                     <p class="text-xl">Outside of the computer, I enjoy playing sports, particularly roller hockey. I love listening to music at any time, 
                         and I often work while listening to it.</p>
                 </div>
-                <div class="w-1/2 ml-10">
+                <div class="w-full md:w-1/2 md:ml-10 pb-10">
                     <h3 class="text-3xl font-semibold font-serif mb-8">Skills</h3>
                     <div class="flex flex-wrap justify-start gap-4 skills overflow-auto">
                         <p class="p-2 rounded text-xl font-semibold">HTML</p>
                         <p class="p-2 rounded text-xl font-semibold">CSS</p>
                         <p class="p-2 rounded text-xl font-semibold">GitHub</p>
                         <p class="p-2 rounded text-xl font-semibold">WordPress</p>
-                        <p class="p-2 rounded text-xl font-semibold">CSS</p>
                         <p class="p-2 rounded text-xl font-semibold">Tailwind</p>
                         <p class="p-2 rounded text-xl font-semibold">Bootstrap</p>
                         <p class="p-2 rounded text-xl font-semibold">QlikSense</p>
@@ -126,12 +142,44 @@
                     </div>
                 </div>
             </div>
-            
+            </section>
 
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+            <!-- Projects -->
+            <section id="projects" class="py-16 projects">
+                <div class="text-center">
+                    <h2 class="text-5xl font-semibold font-serif">Projects</h2>
+                    <p class="text-xl pt-6">Here you can find my personal projects that I created.</p>
+                </div>
+                <div class="flex flex-col md:flex-row px-10 py-10 items-center justify-center">
+                    <a href='https://github.com/Javiponte29/A-Colleita' target='_blank' class="md:mr-8 mb-8 md:mb-0">
+                        <img class="w-96 h-60 object-cover" src='https://i.postimg.cc/ppvxWd1k/Home.png' alt='Home'/>
+                    </a>
+                    <div class="max-w-lg text-center md:text-left">
+                        <h3 class="text-3xl font-semibold font-serif mb-4">A Colleita</h3>
+                        <p class="text-xl mt-2 mb-6">A Colleita is a website aimed at connecting consumers with local farmers in Galicia. Our main goal is to promote the 
+                        consumption of fresh, high-quality products while supporting small producers in the region. By removing intermediaries, 
+                        we ensure that both farmers and consumers receive fair and direct benefits.</p>
+                        <div class="flex justify-center md:justify-start">
+                            <a href="https://github.com/Javiponte29/A-Colleita" target="_blank" class="project-b font-bold py-4 px-16 text-xl rounded-lg bg-orange-500 text-white">
+                                Github Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- Contact 
+            <section id="contact" class="contact">
+
+            </section>-->
     </main>
 </body>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        const menu = document.getElementById('dropdown-menu');
+        menu.classList.toggle('hidden');
+    });
+    </script>
+    
+    
 </html>
